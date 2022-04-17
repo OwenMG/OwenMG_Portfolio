@@ -123,14 +123,18 @@ main {
     position:relative;
     border-radius: var(--radius);
 }
+.project img {
+    max-width: 200px;
+    max-height: auto;
+}
 
 .project figcaption{
     position: absolute;
     top: 103%;
 }
 #pro_1 {
-    width: 200px;
-    height: auto;
+    max-width: 300px;
+    max-height: auto;
 }
 
 .project:hover {
@@ -138,8 +142,8 @@ main {
 }
 .project img:hover{
     position:relative;
-    width:200px;
-    height:auto;
+    max-width:200px;
+    max-height:auto;
     display:block;
     z-index:999;
 }
