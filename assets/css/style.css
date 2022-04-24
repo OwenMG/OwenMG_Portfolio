@@ -17,6 +17,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--marker);
 }
+h3{
+    font-size: 100%;
+    margin: auto 40%;
+}
 h2 {
     margin: 20px 30%;
 }
@@ -46,11 +50,20 @@ nav ul li a {
 
 }
 
+/* ######### About ######### */
+/* ######################### */
+
+#portrait {
+    max-width: 100%;
+    max-height: auto;
+}
+
 /* ######### Project Gallery ######### */
 /* #################################### */
 .card {
     background-color: var(--lav);
     margin: 5px auto;
+    box-shadow: 5px 8px 10px var(--mint);
 }
 .card-title {
     text-align: center;
@@ -73,8 +86,16 @@ nav ul li a {
 
 /* ######### Contact Me ######### */
 /* ############################## */
-
+.clinks{
+    display: flex;
+    justify-content: space-around;
+}
 .clinks img {
     height: 50px;
+    width: auto;
+}
+
+#resumeicon {
+    height: 70px;
     width: auto;
 }
