@@ -1,0 +1,198 @@
+:root {
+    --shadows: #c2b2b4;
+ --violet: #6b4e71;
+ --charcoal: #3a4454;
+ --elblue: #53687e;
+ --misty: #f5dddd;
+ --radius: 25px;
+}
+ 
+/* Setting General Stylings */
+* {
+    font-size: 16px;
+    font-family: "Times New Roman", "Times", sans-serif;
+}
+
+/* setting body to flexbox to keep all sections in place */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--shadows);
+    width:100%;
+    height:100%;
+}
+
+/* styling header */
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: var(--violet);
+    padding: 10px;
+}
+
+/* styling nav box */
+nav {
+    display:flex;
+    background-color: var(--elblue);
+    padding: 10px;
+    border-radius:10px;
+}
+
+/* styling collection placement of nav items */
+nav ul {
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* styling appearance of nav items */
+nav ul li {
+    padding: 3px;
+    border:  3px solid #000307;
+    margin: 3px;
+}
+
+/* styling font of nav items */
+nav ul li a {
+    font-size: 130%;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* creating nav item reactivity */
+nav ul li:hover{
+    border: 2px dashed var(--misty);
+}
+
+/* flexboxxing main, setting grow to keep footer in place */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* styling about section */
+#about {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.info p {
+    border: 4px solid var(--violet);
+    border-radius: var(--radius);
+    padding: 5px;
+    background-color: var(--misty);
+}
+
+#about img {
+    max-width: 20%;
+    height: auto;
+}
+
+/* determining placement of project gallery items */
+#project_gallery {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.gallery {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+/* styling project gallery items */
+.project {
+    display:flex;
+    flex: 1 0 0;
+    padding: 7px;
+    border: 4px solid var(--violet);
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    border-radius: var(--radius);
+}
+.project img {
+    max-width: 200px;
+    max-height: auto;
+}
+
+.project figcaption{
+    position: absolute;
+    top: 103%;
+}
+#pro_1 {
+    max-width: 300px;
+    max-height: auto;
+}
+
+.project:hover {
+    border-style: dashed;
+}
+.project img:hover{
+    position:relative;
+    max-width:200px;
+    max-height:auto;
+    display:block;
+    z-index:999;
+}
+
+/* styling contact me section */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.clinks{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clinks img {
+    height: 50px;
+    width: auto;
+}
+
+.clinks img:hover {
+    position:relative;
+    width:100px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+/* styling footer */
+footer {
+    background-color: var(--misty);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+/* styling header font */
+h1 {
+    font-size:250%;
+}
+
+h2 {
+    font-size: 180%;
+}
+
+/* for proper placement of sections in body box */
+header, main, footer {
+    flex-shrink: 0;
+}
